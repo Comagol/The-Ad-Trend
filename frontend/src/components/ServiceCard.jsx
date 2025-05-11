@@ -1,6 +1,8 @@
 import { Box, Text, Image, Button, VStack } from '@chakra-ui/react'
+import { Link } from 'react-router-dom'
 
 const ServiceCard = ({
+  id,
   title = 'Nombre del servicio',
   image = 'https://via.placeholder.com/150',
   description = 'Breve descripción del servicio.'
@@ -13,7 +15,7 @@ const ServiceCard = ({
           <Image src={image} alt={title} borderRadius="md" boxSize="120px" objectFit="cover" bg="gray.100" />
         </Box>
         <Text fontSize="md" color="gray.600">{description}</Text>
-        <Button colorScheme="blue" size="sm" mt={2}>ver más</Button>
+        <Button as={Link} to={`/servicio/${id}`} colorScheme="blue" size="sm" mt={2}>ver más</Button>
       </VStack>
     </Box>
   )
