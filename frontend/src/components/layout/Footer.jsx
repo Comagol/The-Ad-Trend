@@ -1,4 +1,5 @@
-import { Box, Container, Flex, Text, Button, HStack, Image } from '@chakra-ui/react'
+import { Box, Container, Flex, IconButton, Button, HStack, Image } from '@chakra-ui/react'
+import { FaInstagram, FaFacebook, FaTwitter } from 'react-icons/fa'
 
 const Footer = () => {
   return (
@@ -13,8 +14,9 @@ const Footer = () => {
           <Button variant="outline">COPY</Button>
           {/* Redes */}
           <HStack spacing={2}>
-            <Button variant="outline">REDES</Button>
-            <Button variant="outline">REDES</Button>
+            <IconButton aria-label='Instagram' icon={<FaInstagram />} variant="outline"></IconButton>
+            <IconButton aria-label='Facebook' icon={<FaFacebook />} variant="outline"></IconButton>
+            <IconButton aria-label='Twitter' icon={<FaTwitter />} variant="outline"></IconButton>
           </HStack>
         </Flex>
       </Container>
