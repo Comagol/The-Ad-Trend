@@ -22,7 +22,9 @@ const Navbar = () => {
         </Flex>
         {/* Carrito y login a la derecha */}
         <Flex alignItems="center" ml={8} gap={4}>
-          <CartButton />
+          <Link to="/carrito">
+            <CartButton />
+          </Link>
           <Link to="/login">
             <IconButton aria-label="Iniciar sesión" icon={<FiUser />} variant="outline" />
           </Link>

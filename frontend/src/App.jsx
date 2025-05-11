@@ -5,20 +5,25 @@ import Home from './pages/Home'
 import Login from './pages/Login'
 import Register from './pages/Register'
 import ServiceDetail from './pages/ServiceDetail'
+import CartView from './pages/CartView'
+import { CartProvider } from './context/CartContext'
 
 function App() {
   return (
     <ChakraProvider>
-      <Router>
-        <Layout>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
-            <Route path="/servicio/:id" element={<ServiceDetail />} />
-          </Routes>
-        </Layout>
-      </Router>
+      <CartProvider>
+        <Router>
+          <Layout>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/register" element={<Register />} />
+              <Route path="/servicio/:id" element={<ServiceDetail />} />
+              <Route path="/carrito" element={<CartView />} />
+            </Routes>
+          </Layout>
+        </Router>
+      </CartProvider>
     </ChakraProvider>
   )
 }
