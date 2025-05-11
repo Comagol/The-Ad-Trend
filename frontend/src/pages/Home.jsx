@@ -1,14 +1,14 @@
-import { Box, Heading, Text } from '@chakra-ui/react'
+import { Box } from '@chakra-ui/react'
+import Carousel from '../components/Carousel'
+import ServiceList from '../components/ServiceList'
 
 const Home = () => {
   return (
     <Box>
-      <Heading as="h1" size="2xl" mb={6}>
-        Welcome to The Ad Trend
-      </Heading>
-      <Text fontSize="xl">
-        Your platform for managing and tracking advertising trends.
-      </Text>
+      {/* Carrusel */}
+      <Carousel />
+      {/* Lista de servicios */}
+      <ServiceList />
     </Box>
   )
 }
