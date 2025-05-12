@@ -4,7 +4,7 @@ import { services } from '../data/services'
 
 const ServiceList = () => {
   return (
-    <HStack spacing={8} justify="center" mt={8} mb={8}>
+    <HStack spacing={10} justify="center" mt={8} mb={8} bg="transparent">
       {services.map((service, idx) => (
         <ServiceCard key={service.id} {...service} />
       ))}

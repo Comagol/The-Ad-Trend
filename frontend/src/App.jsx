@@ -7,10 +7,11 @@ import Register from './pages/Register'
 import ServiceDetail from './pages/ServiceDetail'
 import CartView from './pages/CartView'
 import { CartProvider } from './context/CartContext'
+import theme from './theme'
 
 function App() {
   return (
-    <ChakraProvider>
+    <ChakraProvider theme={theme}>
       <CartProvider>
         <Router>
           <Layout>
