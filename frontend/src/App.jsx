@@ -6,6 +6,7 @@ import Login from './pages/Login'
 import Register from './pages/Register'
 import ServiceDetail from './pages/ServiceDetail'
 import CartView from './pages/CartView'
+import ServicesView from './pages/ServicesView'
 import { CartProvider } from './context/CartContext'
 import theme from './theme'
 
@@ -21,6 +22,7 @@ function App() {
               <Route path="/register" element={<Register />} />
               <Route path="/servicio/:id" element={<ServiceDetail />} />
               <Route path="/carrito" element={<CartView />} />
+              <Route path="/servicios" element={<ServicesView />} />
             </Routes>
           </Layout>
         </Router>

@@ -4,7 +4,7 @@ import logo from '../../assets/logo.png'
 
 const Footer = () => {
   return (
-    <Box as="footer" bg="dark.900" py={4} mt="auto" borderRadius="lg">
+    <Box as="footer" bg="dark.700" py={4} mt="auto" borderRadius="lg">
       <Container maxW="container.xl">
         <Flex alignItems="center" justifyContent="space-between">
           {/* Logo */}
