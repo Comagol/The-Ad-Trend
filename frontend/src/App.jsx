@@ -10,6 +10,7 @@ import ServicesView from './pages/ServicesView'
 import AboutUs from './pages/AboutUs'
 import { CartProvider } from './context/CartContext'
 import theme from './theme'
+import Models from './pages/Models'
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
               <Route path="/carrito" element={<CartView />} />
               <Route path="/servicios" element={<ServicesView />} />
               <Route path="/nosotros" element={<AboutUs />} />
+              <Route path="/modelos" element={<Models />} />
             </Routes>
           </Layout>
         </Router>
