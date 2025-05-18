@@ -6,8 +6,11 @@ import Login from './pages/Login'
 import Register from './pages/Register'
 import ServiceDetail from './pages/ServiceDetail'
 import CartView from './pages/CartView'
+import ServicesView from './pages/ServicesView'
+import AboutUs from './pages/AboutUs'
 import { CartProvider } from './context/CartContext'
 import theme from './theme'
+import Models from './pages/Models'
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
               <Route path="/register" element={<Register />} />
               <Route path="/servicio/:id" element={<ServiceDetail />} />
               <Route path="/carrito" element={<CartView />} />
+              <Route path="/servicios" element={<ServicesView />} />
+              <Route path="/nosotros" element={<AboutUs />} />
+              <Route path="/modelos" element={<Models />} />
             </Routes>
           </Layout>
         </Router>

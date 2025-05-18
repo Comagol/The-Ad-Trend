@@ -8,7 +8,7 @@ const CartView = () => {
   const total = cart.reduce((sum, item) => sum + (item.price || 0), 0)
 
   return (
-    <Box maxW="lg" mx="auto" mt={10} p={6} borderWidth="1px" borderRadius="lg" boxShadow="lg" bg="white">
+    <Box maxW="lg" mx="auto" mt={10} p={6} borderWidth="1px" borderRadius="lg" boxShadow="lg" bg="dark.800">
       <Heading as="h2" size="lg" mb={6}>Carrito de compras</Heading>
       {cart.length === 0 ? (
         <Text>No hay servicios en el carrito.</Text>

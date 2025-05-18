@@ -6,7 +6,7 @@ import logo from '../../assets/logo.png'
 
 const Navbar = () => {
   return (
-    <Box bg="dark.900" px={4} py={2} borderRadius="lg" mt={2} mb={4}>
+    <Box bg="dark.700" px={4} py={2} borderRadius="lg" mt={2} mb={4}>
       <Flex alignItems="center" justifyContent="space-between">
         {/* Logo */}
         <Link to="/">
