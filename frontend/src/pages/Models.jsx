@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import {
-  Box,
   Container,
   Heading,
   VStack,
@@ -67,22 +66,22 @@ const Models = () => {
   }
 
   return (
-    <Container maxW="container.md" py={8}>
+    <Container bg="dark.700" maxW="container.md" py={8}>
       <VStack spacing={8} align="stretch">
-        <Heading as="h1" size="xl" textAlign="center">
+        <Heading as="h1" size="xl" textAlign="center" color="bone.100">
           Únete a Nuestra Agencia
         </Heading>
 
         <form onSubmit={handleSubmit}>
           <VStack spacing={6}>
             <Card w="100%">
-              <CardBody>
+              <CardBody bg="dark.800">
                 <VStack spacing={4}>
-                  <Heading size="md">Información Personal</Heading>
+                  <Heading size="md" color="bone.100">Información Personal</Heading>
                   <Stack w="100%" spacing={4}>
                     <FormControl isRequired>
-                      <FormLabel>Nombre</FormLabel>
-                      <Input
+                      <FormLabel color="bone.100">Nombre</FormLabel>
+                      <Input color="bone.100"
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
@@ -91,8 +90,8 @@ const Models = () => {
                     </FormControl>
 
                     <FormControl isRequired>
-                      <FormLabel>Apellido</FormLabel>
-                      <Input
+                      <FormLabel color="bone.100">Apellido</FormLabel>
+                      <Input color="bone.100"
                         name="lastName"
                         value={formData.lastName}
                         onChange={handleChange}
@@ -101,8 +100,8 @@ const Models = () => {
                     </FormControl>
 
                     <FormControl isRequired>
-                      <FormLabel>Edad</FormLabel>
-                      <NumberInput
+                      <FormLabel color="bone.100">Edad</FormLabel>
+                      <NumberInput color="bone.100"
                         min={16}
                         max={99}
                         value={formData.age}
@@ -110,8 +109,8 @@ const Models = () => {
                       >
                         <NumberInputField />
                         <NumberInputStepper>
-                          <NumberIncrementStepper />
-                          <NumberDecrementStepper />
+                          <NumberIncrementStepper color="bone.100" />
+                          <NumberDecrementStepper color="bone.100" />
                         </NumberInputStepper>
                       </NumberInput>
                     </FormControl>
@@ -121,13 +120,13 @@ const Models = () => {
             </Card>
 
             <Card w="100%">
-              <CardBody>
+              <CardBody bg="dark.800">
                 <VStack spacing={4}>
-                  <Heading size="md">Contacto</Heading>
+                  <Heading size="md" color="bone.100">Contacto</Heading>
                   <Stack w="100%" spacing={4}>
                     <FormControl isRequired>
-                      <FormLabel>Correo electrónico</FormLabel>
-                      <Input
+                      <FormLabel color="bone.100">Correo electrónico</FormLabel>
+                      <Input color="bone.100"
                         type="email"
                         name="email"
                         value={formData.email}
@@ -137,8 +136,8 @@ const Models = () => {
                     </FormControl>
 
                     <FormControl isRequired>
-                      <FormLabel>Teléfono</FormLabel>
-                      <Input
+                      <FormLabel color="bone.100">Teléfono</FormLabel>
+                      <Input color="bone.100"
                         type="tel"
                         name="phone"
                         value={formData.phone}
@@ -152,13 +151,13 @@ const Models = () => {
             </Card>
 
             <Card w="100%">
-              <CardBody>
+              <CardBody bg="dark.800">
                 <VStack spacing={4}>
-                  <Heading size="md">Medidas</Heading>
+                  <Heading size="md" color="bone.100">Medidas</Heading>
                   <Stack w="100%" spacing={4}>
                     <FormControl isRequired>
-                      <FormLabel>Altura (cm)</FormLabel>
-                      <NumberInput
+                      <FormLabel color="bone.100">Altura (cm)</FormLabel>
+                      <NumberInput color="bone.100"
                         min={150}
                         max={220}
                         value={formData.height}
@@ -166,15 +165,15 @@ const Models = () => {
                       >
                         <NumberInputField />
                         <NumberInputStepper>
-                          <NumberIncrementStepper />
-                          <NumberDecrementStepper />
+                          <NumberIncrementStepper color="bone.100" />
+                          <NumberDecrementStepper color="bone.100" />
                         </NumberInputStepper>
                       </NumberInput>
                     </FormControl>
 
                     <FormControl isRequired>
-                      <FormLabel>Peso (kg)</FormLabel>
-                      <NumberInput
+                      <FormLabel color="bone.100">Peso (kg)</FormLabel>
+                      <NumberInput color="bone.100"
                         min={40}
                         max={120}
                         value={formData.weight}
@@ -182,15 +181,15 @@ const Models = () => {
                       >
                         <NumberInputField />
                         <NumberInputStepper>
-                          <NumberIncrementStepper />
-                          <NumberDecrementStepper />
+                          <NumberIncrementStepper color="bone.100" />
+                          <NumberDecrementStepper color="bone.100" />
                         </NumberInputStepper>
                       </NumberInput>
                     </FormControl>
 
                     <FormControl isRequired>
-                      <FormLabel>Busto (cm)</FormLabel>
-                      <NumberInput
+                      <FormLabel color="bone.100">Busto (cm)</FormLabel>
+                      <NumberInput color="bone.100"
                         min={70}
                         max={120}
                         value={formData.bust}
@@ -198,15 +197,15 @@ const Models = () => {
                       >
                         <NumberInputField />
                         <NumberInputStepper>
-                          <NumberIncrementStepper />
-                          <NumberDecrementStepper />
+                          <NumberIncrementStepper color="bone.100" />
+                          <NumberDecrementStepper color="bone.100" />
                         </NumberInputStepper>
                       </NumberInput>
                     </FormControl>
 
                     <FormControl isRequired>
-                      <FormLabel>Cintura (cm)</FormLabel>
-                      <NumberInput
+                      <FormLabel color="bone.100">Cintura (cm)</FormLabel>
+                      <NumberInput color="bone.100"
                         min={50}
                         max={100}
                         value={formData.waist}
@@ -214,15 +213,15 @@ const Models = () => {
                       >
                         <NumberInputField />
                         <NumberInputStepper>
-                          <NumberIncrementStepper />
-                          <NumberDecrementStepper />
+                          <NumberIncrementStepper color="bone.100" />
+                          <NumberDecrementStepper color="bone.100" />
                         </NumberInputStepper>
                       </NumberInput>
                     </FormControl>
 
                     <FormControl isRequired>
-                      <FormLabel>Cadera (cm)</FormLabel>
-                      <NumberInput
+                      <FormLabel color="bone.100">Cadera (cm)</FormLabel>
+                      <NumberInput color="bone.100"
                         min={70}
                         max={120}
                         value={formData.hips}
@@ -230,8 +229,8 @@ const Models = () => {
                       >
                         <NumberInputField />
                         <NumberInputStepper>
-                          <NumberIncrementStepper />
-                          <NumberDecrementStepper />
+                          <NumberIncrementStepper color="bone.100" />
+                          <NumberDecrementStepper color="bone.100" />
                         </NumberInputStepper>
                       </NumberInput>
                     </FormControl>
@@ -241,12 +240,12 @@ const Models = () => {
             </Card>
 
             <Card w="100%">
-              <CardBody>
+              <CardBody bg="dark.800">
                 <VStack spacing={4}>
-                  <Heading size="md">Experiencia</Heading>
+                  <Heading size="md" color="bone.100">Experiencia</Heading>
                   <FormControl>
-                    <FormLabel>Cuéntanos sobre tu experiencia en el modelaje</FormLabel>
-                    <Textarea
+                    <FormLabel color="bone.100">Cuéntanos sobre tu experiencia en el modelaje</FormLabel>
+                    <Textarea color="bone.100"
                       name="experience"
                       value={formData.experience}
                       onChange={handleChange}
@@ -259,19 +258,19 @@ const Models = () => {
             </Card>
 
             <Card w="100%">
-              <CardBody>
+              <CardBody bg="dark.800">
                 <VStack spacing={4}>
-                  <Heading size="md">Fotos</Heading>
+                  <Heading size="md" color="bone.100" >Fotos</Heading>
                   <FormControl isRequired>
-                    <FormLabel>Sube tus fotos</FormLabel>
-                    <Input
+                    <FormLabel color="bone.100">Sube tus fotos</FormLabel>
+                    <Input color="bone.100"
                       type="file"
                       name="photos"
                       onChange={handleChange}
                       accept="image/*"
                       p={1}
                     />
-                    <Text fontSize="sm" color="gray.500" mt={1}>
+                    <Text fontSize="sm" color="gray.100" mt={1}>
                       Formatos aceptados: JPG, PNG, GIF
                     </Text>
                   </FormControl>

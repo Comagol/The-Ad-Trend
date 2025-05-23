@@ -8,6 +8,7 @@ import ServiceDetail from './pages/ServiceDetail'
 import CartView from './pages/CartView'
 import ServicesView from './pages/ServicesView'
 import AboutUs from './pages/AboutUs'
+import ClientsView from './pages/ClientsView'
 import { CartProvider } from './context/CartContext'
 import theme from './theme'
 import Models from './pages/Models'
@@ -27,6 +28,7 @@ function App() {
               <Route path="/servicios" element={<ServicesView />} />
               <Route path="/nosotros" element={<AboutUs />} />
               <Route path="/modelos" element={<Models />} />
+              <Route path="/clientes" element={<ClientsView />} />
             </Routes>
           </Layout>
         </Router>
