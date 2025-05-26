@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const clientController = require('../controllers/clientController');
-const auth = require('../middleware/auth');
+const { auth } = require('../middleware/auth');
 
 // Todas las rutas requieren autenticación
 router.use(auth);
