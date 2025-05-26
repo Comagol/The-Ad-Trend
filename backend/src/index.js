@@ -10,6 +10,7 @@ const authRoutes = require('./routes/auth');
 const serviceRoutes = require('./routes/services');
 const modelRoutes = require('./routes/models');
 const publicRoutes = require('./routes/public');
+const cartRoutes = require('./routes/cart');
 
 const app = express();
 
@@ -24,6 +25,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/services', serviceRoutes);
 app.use('/api/models', modelRoutes);
 app.use('/api/public', publicRoutes);
+app.use('/api/cart', cartRoutes);
 
 // Error handling middleware
 app.use((err, req, res, next) => {
