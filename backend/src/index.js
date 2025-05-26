@@ -11,6 +11,7 @@ const serviceRoutes = require('./routes/services');
 const modelRoutes = require('./routes/models');
 const publicRoutes = require('./routes/public');
 const cartRoutes = require('./routes/cart');
+const clientRoutes = require('./routes/clients');
 
 const app = express();
 
@@ -26,6 +27,7 @@ app.use('/api/services', serviceRoutes);
 app.use('/api/models', modelRoutes);
 app.use('/api/public', publicRoutes);
 app.use('/api/cart', cartRoutes);
+app.use('/api/clients', clientRoutes);
 
 // Error handling middleware
 app.use((err, req, res, next) => {
